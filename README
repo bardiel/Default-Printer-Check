@@ -1,18 +1,15 @@
-REM Default Printer Check LOGON
-REM Version	0.9.
-REM Author	Bardiel W. Thirtytwo
-REM License	Creative Commons Attribution-ShareAlike 3.0 Unported License (CC-BY-SA) http://creativecommons.org/licenses/by-sa/3.0/
-REM
-REM This script is designed for use with Citrix XenDesktop 3.0, 4.0, 5.0 and 5.5.
-REM It targets issues regarding default printers.
-REM This scripts logs every printer that is mapped when the user logs on to it's virtual desktop
-REM and veryfies which was the default printer and who set the default printer (user or not user (see below)).
-REM This script is combined with Default Printer Check LOGON, which is very similar but it should run on logon.
-REM 
-REM To gather the client device name (which is required in this version) 
-REM XDClientName.exe from ( http://support.citrix.com/article/CTX124963 ) MUST
-REM be runned before this script.
-REM
-REM ATTENTION!! logoff and logon scritps are differnent. Do not mistake.
-REM
-REM Ussage: DefaultPrnCheck_LogOFF.cmd C:\temp\DefaultPrnCheck.log
+Default Printer Check
+Version	0.9.
+Author	Bardiel W. Thirtytwo
+License	Creative Commons Attribution-ShareAlike 3.0 Unported License (CC-BY-SA) http://creativecommons.org/licenses/by-sa/3.0/
+
+This script is designed for use with Citrix XenDesktop 3.0, 4.0, 5.0 and 5.5.
+It targets issues regarding default printers.
+This scripts logs every printer that is mapped when the user logs on to and logs off from it's virtual desktop and veryfies which was the default printer and who set the default printer (user or not user).
+This script is combined with Default Printer Check LOGON, which is very similar but it should run on logon.
+
+To gather the client device name (which is required in this version) XDClientName.exe from ( http://support.citrix.com/article/CTX124963 ) MUST be runned before LOGON script.
+
+ATTENTION!! logoff and logon scritps are differnent. Do not mistake.
+
+Ussage: DefaultPrnCheck_LogOFF.cmd C:\temp\DefaultPrnCheck.log
